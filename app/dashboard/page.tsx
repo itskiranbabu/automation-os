@@ -50,7 +50,7 @@ export default async function DashboardPage() {
           <h1 className="text-3xl font-bold text-slate-900 mb-2">
             Welcome back, {session.user.user_metadata?.full_name || session.user.email}!
           </h1>
-          <p className="text-slate-600">Here's what's happening with your automations</p>
+          <p className="text-slate-600">Here&apos;s what&apos;s happening with your automations</p>
         </div>
 
         {/* Quick Actions */}
