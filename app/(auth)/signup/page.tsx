@@ -9,7 +9,7 @@ export default function SignupPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState('');
-  const [loading, setLoading] = useState('');
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
   
@@ -69,7 +69,7 @@ export default function SignupPage() {
           </div>
           <h2 className="text-2xl font-bold mb-2">Check your email</h2>
           <p className="text-slate-600 mb-6">
-            We've sent a confirmation link to <strong>{email}</strong>. Click the link to verify your account.
+            We&apos;ve sent a confirmation link to <strong>{email}</strong>. Click the link to verify your account.
           </p>
           <Link
             href="/login"
